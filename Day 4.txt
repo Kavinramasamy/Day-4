@@ -1,0 +1,92 @@
+1.For the given JSON iterate over all for loops(for,for in,forEach)
+		
+		//using for loop;
+		var json={"name":"kavin",
+
+			"age":22,
+			"state":"TamilNadu"};
+		var obj=json.parse(json);
+		for(var key in obj){
+			console.log(${key}:${obj[key]})
+		}
+		
+		//using for in loop;
+		
+		  var json={"name":"kavin",
+            "age": 22,
+            "state":"TamilNadu"};
+    for(var key in json){
+        console.log(`${key}:${json[key]}`)
+    }
+
+		//using for of loop;
+
+		 var json=`{"name":"kavin",
+            "age": 22,
+            "state":"TamilNadu"}`;
+  var obj=JSON.parse(json);
+  for(var [key,value] of Object.entries(obj)){
+       console.log(`${key}:${obj[key]}`);
+  }
+
+		//using for Each loop;
+
+		 var json={"name":"kavin",
+            "age": 22,
+            "state":"TamilNadu"};
+Object.entries(json).forEach(([key,value])=>{
+    console.log(`${key}:${json[key]}`)
+}) ;      
+
+2. Create your own resume data in JSON format.
+
+	{
+  "basics": {
+    "name": "Kavin",
+    "label": "Mechanical Engineer",
+    "image": "",
+    "email": "kavinramasamymech@gmail.com",
+    "phone": "(+91) 63792-33604",
+    "url": "",
+    "summary": "Im an Mechanical Engineer and intrested in programming and also an optimistic minded smart hardworker.",
+    "location": {
+      "address": "144,kattur",
+      "postalCode": "638007",
+      "city": "Erode",
+      "countryCode": "Asia",
+      "region": "India"
+    },
+  "education": [{
+    "institution": "Mahendra Institute of Technology",
+    "url": "https://www.mahendrainstituteoftechnology.com/",
+    "area": "Mechanical Engineering",
+    "studyType": "Bachelor",
+    "startDate": "2018-09-05",
+    "endDate": "2022-08-08",
+    "score": "8",
+  }],
+  "awards": [{
+    "title": "Interschool quiz competition",
+    "year": "",
+    "awarder": "Kongu Matric Hr.sec school",
+  }],
+  "skills": [{
+    "name": "Web Development",
+    "level": "beginner",
+    "keywords": [
+      "HTML"
+    ]
+  }],
+  "languages": [{
+    "language": "Tamil",
+    "fluency": "Native speaker"
+  }],
+  "interests": [{
+    "name": "Programming",
+    "keywords": "Problem Solving"
+  }],
+}}
+
+
+
+
